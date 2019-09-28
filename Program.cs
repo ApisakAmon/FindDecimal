@@ -6,7 +6,8 @@ namespace FindDecimal
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            GetValue getValue = new GetValue();
+            getValue.GetX();
         }
     }
 }

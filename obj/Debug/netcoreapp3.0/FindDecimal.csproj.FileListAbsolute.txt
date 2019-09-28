@@ -1,0 +1,11 @@
+C:\Game Development\FindDecimal\obj\Debug\netcoreapp3.0\FindDecimal.csprojAssemblyReference.cache
+C:\Game Development\FindDecimal\obj\Debug\netcoreapp3.0\FindDecimal.AssemblyInfoInputs.cache
+C:\Game Development\FindDecimal\obj\Debug\netcoreapp3.0\FindDecimal.AssemblyInfo.cs
+C:\Game Development\FindDecimal\bin\Debug\netcoreapp3.0\FindDecimal.exe
+C:\Game Development\FindDecimal\bin\Debug\netcoreapp3.0\FindDecimal.deps.json
+C:\Game Development\FindDecimal\bin\Debug\netcoreapp3.0\FindDecimal.runtimeconfig.json
+C:\Game Development\FindDecimal\bin\Debug\netcoreapp3.0\FindDecimal.runtimeconfig.dev.json
+C:\Game Development\FindDecimal\bin\Debug\netcoreapp3.0\FindDecimal.dll
+C:\Game Development\FindDecimal\bin\Debug\netcoreapp3.0\FindDecimal.pdb
+C:\Game Development\FindDecimal\obj\Debug\netcoreapp3.0\FindDecimal.dll
+C:\Game Development\FindDecimal\obj\Debug\netcoreapp3.0\FindDecimal.pdb
