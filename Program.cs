@@ -8,6 +8,12 @@ namespace FindDecimal
         {
             GetValue getValue = new GetValue();
             getValue.GetX();
+            getValue.GetY();
+            getValue.GetPosition();
+            getValue.PrintValue();
+            getValue.DivideXY();
+            getValue.GetDecimalValue();
+            getValue.GetDecimalPositionValue();
         }
     }
 }
