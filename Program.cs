@@ -6,8 +6,8 @@ namespace FindDecimal
     {
         static void Main(string[] args)
         {
-            Function function = new Function();
-            function.StartActionSequence();
+            StateManager stateManager = new StateManager();
+            stateManager.StartActionSequence();
         }
     }
 }

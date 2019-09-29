@@ -1,6 +1,6 @@
 using System;
 
-public class Function
+public class StateManager
 {
 
     private decimal x;
@@ -9,6 +9,11 @@ public class Function
     private int decimalPosition;
     private string decimalValue;
     private char decimalPositionValue;
+
+    GetX getX = new GetX();
+    GetY getY = new GetY();
+    GetPosition getPosition = new GetPosition();
+
 
     public void ResetState()
     {
@@ -22,17 +27,21 @@ public class Function
 
     public void StartActionSequence()
     {
-        GetX();
-        GetY();
-        GetPosition();
+        getX.GetXByInput();
+        x = getX.GetXValue();
+
+        getY.GetYByInput();
+        y = getY.GetYValue();
+
+        getPosition.GetDecimalPositionInput();
+        decimalPosition = getPosition.GetDecimalPosition();
+
         PrintValue();
         DivideXY();
         GetDecimalValue();
         GetDecimalPositionValue();
         IsTryAgain();
     }
-
-
 
     public void IsTryAgain()
     {
@@ -52,62 +61,9 @@ public class Function
         else
         {
             Console.WriteLine("Please Type only [YES,NO]");
-            IsTryAgain();        }
-
-    }
-
-    public void GetX()
-    {
-        Console.Write("Enter your X: ");
-        string input = Console.ReadLine();
-        decimal number = 0;
-
-        if (decimal.TryParse(input, out number))
-        {
-            x = number;
-            Console.WriteLine("Your X is " + x);
+            IsTryAgain();
         }
-        else
-        {
-            Console.WriteLine("Your X is not a number. Please input only 0-9");
-            GetX();
-        }
-    }
 
-    public void GetY()
-    {
-        Console.Write("Enter your Y: ");
-        string input = Console.ReadLine();
-        decimal number = 0;
-
-        if (decimal.TryParse(input, out number))
-        {
-            y = number;
-            Console.WriteLine("Your X is " + y);
-        }
-        else
-        {
-            Console.WriteLine("Your X is not a number. Please input only 0-9");
-            GetY();
-        }
-    }
-
-    public void GetPosition()
-    {
-        Console.Write("Enter your decimal position: ");
-        string input = Console.ReadLine();
-        int number = 0;
-
-        if (Int32.TryParse(input, out number))
-        {
-            decimalPosition = number;
-            Console.WriteLine("Your Y is " + decimalPosition);
-        }
-        else
-        {
-            Console.WriteLine("Your decimal position is not a number. Please input only 0-9");
-            GetY();
-        }
     }
 
     public void GetDecimalValue()
@@ -126,7 +82,6 @@ public class Function
         char first = decimalValue[decimalPosition - 1];
         decimalPositionValue = first;
         Console.WriteLine("Decimal value in " + decimalPosition + " position is " + decimalPositionValue);
-
     }
 
     public void DivideXY()
@@ -136,8 +91,6 @@ public class Function
         dividedValue = value;
         Console.WriteLine("X/Y = " + dividedValue);
     }
-
-
 
     public void PrintValue()
     {
