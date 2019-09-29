@@ -1,6 +1,6 @@
 using System;
 
-public class GetValue
+public class Function
 {
 
     private decimal x;
@@ -10,7 +10,51 @@ public class GetValue
     private string decimalValue;
     private char decimalPositionValue;
 
+    public void ResetState()
+    {
+        x = 0;
+        y = 0;
+        dividedValue = 0;
+        decimalPosition = 0;
+        decimalValue = null;
+        decimalPositionValue = '\0';
+    }
 
+    public void StartActionSequence()
+    {
+        GetX();
+        GetY();
+        GetPosition();
+        PrintValue();
+        DivideXY();
+        GetDecimalValue();
+        GetDecimalPositionValue();
+        IsTryAgain();
+    }
+
+
+
+    public void IsTryAgain()
+    {
+        Console.WriteLine("Do you want to try again? [YES,NO]");
+        string input = Console.ReadLine();
+        input = input.ToUpper();
+
+        if (input == "YES")
+        {
+            ResetState();
+            StartActionSequence();
+        }
+        else if (input == "NO")
+        {
+            return;
+        }
+        else
+        {
+            Console.WriteLine("Please Type only [YES,NO]");
+            IsTryAgain();        }
+
+    }
 
     public void GetX()
     {
