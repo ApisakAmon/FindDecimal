@@ -2,14 +2,14 @@ using System;
 
 public class GetX
 {
-    private decimal X;
+    private int X;
     public void GetXByInput()
     {
         Console.Write("Enter your X: ");
         string input = Console.ReadLine();
-        decimal number = 0;
+        int number = 0;
 
-        if (decimal.TryParse(input, out number))
+        if (int.TryParse(input, out number))
         {
             X = number;
             Console.WriteLine("Your X is " + X);
@@ -21,7 +21,7 @@ public class GetX
         }
     }
 
-    public decimal GetXValue()
+    public int GetXValue()
     {
         return X;
     }

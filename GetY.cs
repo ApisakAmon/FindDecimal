@@ -2,14 +2,14 @@ using System;
 
 public class GetY
 {
-    private decimal Y;
+    private int Y;
     public void GetYByInput()
     {
         Console.Write("Enter your Y: ");
         string input = Console.ReadLine();
-        decimal number = 0;
+        int number = 0;
 
-        if (decimal.TryParse(input, out number))
+        if (int.TryParse(input, out number))
         {
             Y = number;
             Console.WriteLine("Your Y is " + Y);
@@ -21,7 +21,7 @@ public class GetY
         }
     }
 
-    public decimal GetYValue()
+    public int GetYValue()
     {
         return Y;
     }

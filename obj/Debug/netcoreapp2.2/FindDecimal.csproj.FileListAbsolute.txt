@@ -1,0 +1,11 @@
+F:\DebuzTest\FindDecimal\bin\Debug\netcoreapp2.2\FindDecimal.deps.json
+F:\DebuzTest\FindDecimal\bin\Debug\netcoreapp2.2\FindDecimal.runtimeconfig.json
+F:\DebuzTest\FindDecimal\bin\Debug\netcoreapp2.2\FindDecimal.runtimeconfig.dev.json
+F:\DebuzTest\FindDecimal\bin\Debug\netcoreapp2.2\FindDecimal.dll
+F:\DebuzTest\FindDecimal\bin\Debug\netcoreapp2.2\FindDecimal.pdb
+F:\DebuzTest\FindDecimal\obj\Debug\netcoreapp2.2\FindDecimal.csprojAssemblyReference.cache
+F:\DebuzTest\FindDecimal\obj\Debug\netcoreapp2.2\FindDecimal.csproj.CoreCompileInputs.cache
+F:\DebuzTest\FindDecimal\obj\Debug\netcoreapp2.2\FindDecimal.AssemblyInfoInputs.cache
+F:\DebuzTest\FindDecimal\obj\Debug\netcoreapp2.2\FindDecimal.AssemblyInfo.cs
+F:\DebuzTest\FindDecimal\obj\Debug\netcoreapp2.2\FindDecimal.dll
+F:\DebuzTest\FindDecimal\obj\Debug\netcoreapp2.2\FindDecimal.pdb
