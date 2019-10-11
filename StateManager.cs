@@ -7,20 +7,15 @@ public class StateManager
     private int y;
 
     private int decimalPosition;
-    private int dividedValue;
-    // private string decimalValue;
-    // private char decimalPositionValue;
 
     GetX getX = new GetX();
     GetY getY = new GetY();
     GetPosition getPosition = new GetPosition();
 
-
     public void ResetState()
     {
         x = 0;
         y = 0;
-        dividedValue = 0;
         decimalPosition = 0;
         // decimalValue = null;
         // decimalPositionValue = '\0';
@@ -39,8 +34,6 @@ public class StateManager
 
         PrintValue();
         DivideXY();
-        // GetDecimalValue();
-        // GetDecimalPositionValue();
         IsTryAgain();
     }
 
@@ -67,24 +60,6 @@ public class StateManager
 
     }
 
-    // public void GetDecimalValue()
-    // {
-    //     Console.WriteLine(decimalValue);
-    //     string strDecimal = dividedValue.ToString();
-    //     var regex = new System.Text.RegularExpressions.Regex("(?<=[\\.])[0-9]+");
-    //     if (regex.IsMatch(strDecimal))
-    //     {
-    //         decimalValue = regex.Match(strDecimal).Value;
-    //     }
-    // }
-
-    // public void GetDecimalPositionValue()
-    // {
-    //     char first = decimalValue[decimalPosition - 1];
-    //     decimalPositionValue = first;
-    //     Console.WriteLine("Decimal value in " + decimalPosition + " position is " + decimalPositionValue);
-    // }
-
     public void DivideXY()
     {
         int firstDecimal = x % y;
@@ -104,10 +79,7 @@ public class StateManager
                 Remainder *= 10;
                 result = Remainder / y;
             }
-            
-
         }
-
 
         Console.WriteLine("the result is " + result);
     }
